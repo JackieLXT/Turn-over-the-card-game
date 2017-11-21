@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="yinCang" id="div1" >
+            <div>
+                <p>恭喜通关</p>
+                <label id="star1" class="fa fa-star"></label>
+                <label id="star2" class=""></label>
+                <label id="star3" class=""></label>
+				<label id="labTime">seconds</label><br>
+                <label id="move">move</label>
+            </div>
+            <button onclick="open_win()" class="" style="">Playagainst</button>
+        </div>
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star" id="diYiGe"></i></li>
+        		<li><i class="fa fa-star" id="diErGe"></i></li>
+        		<li><i class="fa fa-star" id="diSanGe"></i></li>
+                <li><input id="oTxt" type="text" value="00:00" class="time" /> seconds</li>
+        	</ul>
+
+        	<!-- <span class="moves">3</span> Moves -->
+            <!-- <label id="moves"></label>Moves -->
+            <input type="text" name="" id="bushu" value="0">Moves
+            <div class="restart" onclick="xipai()">
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck">
+            <li id="card0" class="card" onclick="fanpai(0)">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li id="card1" class="card" onclick="fanpai(1)">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li id="card2" class="card" onclick="fanpai(2)">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li id="card3" class="card" onclick="fanpai(3)">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li id="card4" class="card" onclick="fanpai(4)">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li id="card5" class="card" onclick="fanpai(5)">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li id="card6" class="card" onclick="fanpai(6)">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li id="card7" class="card" onclick="fanpai(7)">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li id="card8" class="card" onclick="fanpai(8)">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li id="card9" class="card" onclick="fanpai(9)">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li id="card10" class="card" onclick="fanpai(10)">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li id="card11" class="card" onclick="fanpai(11)">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li id="card12" class="card" onclick="fanpai(12)">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li id="card13" class="card" onclick="fanpai(13)">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li id="card14" class="card" onclick="fanpai(14)">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li id="card15" class="card" onclick="fanpai(15)">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
